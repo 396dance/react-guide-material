@@ -5,11 +5,15 @@
 
 import "./Child.css";
 
-const Child = ({ color = "green" }) => {
-  console.log(color);
+const Child = ({ color = "green", num, fn, bool, obj }) => {
+  console.log(bool);
   return (
     <div className={`component ${color}`}>
       <h3>Hello Component</h3>
+      <h3>{num}</h3>
+      <h3>{fn("props")}</h3>
+      <h3>{bool ? "true" : "false"}</h3>
+      <h3>{obj.name}</h3>
     </div>
   );
 };
