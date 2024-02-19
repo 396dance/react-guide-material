@@ -11,12 +11,12 @@
 const arr = ["Japan", "Tokyo", "Shinjuku"];
 const objAddress = { country: "Japan", state: "Tokyo", city: "Shinjuku" };
 
-// const fnArr = ([country, state, city]) => {
-//   console.log("---配列---");
-//   console.log(`country: ${country}`);
-//   console.log(`state: ${state}`);
-//   console.log(`city: ${city}`);
-// };
+const fnArr = ([country, e, city]) => {
+  console.log("---配列---");
+  console.log(`country: ${country}`);
+  console.log(`state: ${e}`);
+  console.log(`city: ${city}`);
+};
 
 const fnObj = ({ country, state, city }) => {
   console.log("---オブジェクト---");
@@ -25,5 +25,5 @@ const fnObj = ({ country, state, city }) => {
   console.log(`city: ${city}`);
 };
 
-// fnArr(arr);
-fnObj(objAddress);
+fnArr(arr);
+// fnObj(objAddress);
