@@ -9,11 +9,11 @@ const Example = () => {
   const [rstate, dispatch] = useReducer((prev, { type, step }) => {
     switch (type) {
       case "+":
-        return prev + step; 
+        return prev + step;
       case "-":
         return prev - step;
       default:
-        throw new Error('不明なactionです。')
+        throw new Error("不明なactionです。");
     }
     // if (action === "+") {
     //   return ++prev;
